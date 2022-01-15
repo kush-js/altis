@@ -1,0 +1,17 @@
+<div id="wrapper">
+    <div id="menu">
+        <p class="welcome">Welcome, <b></b></p>
+        <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
+    </div>
+
+    <div id="chatbox">
+        <ul>
+            <div *ngFor="let item of this.messages">
+                {{ item }}
+            </div>
+        </ul>
+    </div>
+
+    <input name="usermsg" type="text" [(ngModel)]="msg" />
+    <input name="submitmsg" type="submit" id="submitmsg" value="Send" (click)="sendMsg()"/>
+</div>
