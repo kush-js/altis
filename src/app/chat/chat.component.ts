@@ -16,6 +16,8 @@ export class ChatComponent implements OnInit {
   sendMsg() {
     this.messages.push(this.msg);
     this.msg = "";
+    //send to backend
+    //this.axios.post("fdfsfsdfds", { "message": this.msg });
   }
   
 
